@@ -31,6 +31,9 @@ public class EmployeeJpaRepositoryTest {
     public void find(){
         Employee employee = employeeJpaRepository.findOne(99);
         System.out.println("employee: " + employee);
+
+        System.out.println("employee(10): " + employeeJpaRepository.exists(10));
+        System.out.println("employee(102): " + employeeJpaRepository.exists(102));
     }
 
 }
